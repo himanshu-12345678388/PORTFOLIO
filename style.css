@@ -1,0 +1,138 @@
+.box1{
+    display:flex;
+    justify-content:space-around;
+    background-color:#1F2937;
+    color:grey;
+    padding:60px;
+    font-weight:700;
+    align-items:stretch;
+    border-radius: 2cap;
+    box-shadow:ivory;   
+}
+
+.header{
+    padding-top:40px;
+    align-items:center;
+    text-align:center;
+}
+
+a{
+  color:hotpink;
+  text-decoration:none;
+  padding:10px;
+
+}
+
+.box3{
+    display:block;
+    text-align:center;
+    bacKground-color:#E5E7EB;
+    font-weight:700;
+    font-family:serif;
+    margin:100px;
+}
+
+
+.box4{
+    display:block;
+    background-color:#666362;
+    color:white;
+}
+
+.head{
+    text-align:center;
+    border: 50px;
+}
+
+.box41{
+    background-color:grey;
+    padding:20px;
+    border-radius:2cap;
+    margin:100px;
+}
+
+.box42{
+    background-color:grey;
+    padding:20px;
+    border-radius:2cap;
+    margin:100px;
+}
+
+.box43{
+    background-color:grey;
+    padding:20px;
+    border-radius:2cap;
+    margin:100px;
+}
+
+.head{
+    padding-top:50px;
+}
+
+button{
+    background-color:grey;
+    color:white;
+    cursor:pointer;
+    transition:0.3s;
+    font-size:16px;
+}
+
+.whole{
+    display:grid;
+    gap:0;
+}
+
+.box5{
+    display:flex;
+    background-color:#36454f;
+    margin-top:20px;
+    gap:20px;
+    border-radius:7px;
+    padding:20px
+}
+
+.box52{
+    margin-right:auto;
+}
+
+.box7{
+    display:grid;
+    background-color:#E5E7EB;
+    text-align:center;
+    margin-top:20px;
+}
+
+.box8{
+    background-color:#E5E7EB;
+}
+
+.buttons{
+    background-color:#676767; /* Example background color */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none; /* Removes the default underline */
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer; /* Changes cursor to a hand icon */
+  border-radius: 8px; /* Rounds the corners */
+}
+
+
+body{
+    padding:10px;
+    font-size:15px;
+
+}
+
+.light{
+    background-color:white;
+    color:black;
+}
+
+ .dark{
+    background-color:black;
+    color:white;
+}
