@@ -1,4 +1,4 @@
-// ==================== THEME TOGGLE ====================
+
 // Dark/Light mode functionality for the theme selector
 document.addEventListener('DOMContentLoaded', function() {
   const modeSelect = document.querySelector('.mode');
@@ -32,7 +32,7 @@ function applyTheme(theme) {
   }
 }
 
-// ==================== SMOOTH SCROLLING ====================
+
 // Smooth scroll effect for all internal links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function(e) {
@@ -45,7 +45,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-// ==================== SCROLL ANIMATIONS ====================
+
 // Fade in sections as user scrolls
 const observerOptions = {
   threshold: 0.1,
@@ -67,7 +67,8 @@ document.querySelectorAll('.box1, .box3, .box4, .box5, .box7, .box8').forEach(bo
   observer.observe(box);
 });
 
-// Add fade-in animation styles
+
+
 const style = document.createElement('style');
 style.textContent = `
   .scroll-animate {
@@ -148,7 +149,7 @@ document.querySelectorAll('button, .buttons').forEach(btn => {
   btn.style.transition = 'transform 0.3s ease, background-color 0.3s ease';
 });
 
-// ==================== IMAGE LOADING EFFECTS ====================
+
 // Smooth fade in for images
 document.querySelectorAll('img').forEach(img => {
   img.style.opacity = '0';
