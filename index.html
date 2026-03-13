@@ -1,145 +1,285 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-   <title>MY PORTFOLIO</title>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width,initial-scale=1.0">
-   <link rel="stylesheet" href="style.css">
- </head>
- <body>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Himanshu Mishra — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-   <div class="whole">
-   <div class="box1">
-    <div class="header"><h1 >  HIMANSHU MISHRA</h1>
-    <h3>CSE | WEB DEV | DEVOPS & CLOUD | SAP </h3>
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-logo"><span class="accent">&gt;</span> HM</div>
+    <ul class="nav-links">
+      <li><a href="#about">about</a></li>
+      <li><a href="#skills">skills</a></li>
+      <li><a href="#projects">projects</a></li>
+      <li><a href="#achievements">achievements</a></li>
+      <li><a href="#contact">contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
 
-    <pre><i>     I'm a first-year computer science student with a strong interest in building full stack
-     projects and system-level programming.
-     I enjoy working with java , Python and web technologies to build practical applications.
-     Currently, i am also learning SAP's ERP systems.</i></pre>
-   </div>
-
-
-    
-    
-    <div class="box2">
-    <img src="me.png" width="250px" height="250px">
-    </div> 
-   </div>
-
-
-   
-   <div class="box3">
-    <h2 > <section class="head"> SKILLS</section> </h2>
-    <div class="headcontent">
-      <pre>
-    <ul> <li> LANGUAGES:C,Python,java,</li> 
-    <li> WEB:HTML,CSS,javascript, </li> 
-    <li> TOOLS:GIT,Github,shell scripting </li>
-    <li> CONCEPTS:DSA,OOP,AWS CLOUD ESSENTIALS,BUISNESS PROCESS IN SAP </li>
-    </pres>
-    </ul></div>
-  <a href="achievements/experience.html"><h2>achievements</h2></a></div>
-
-     <div class="box4"> 
-     <div class="head">
-      <img src="projecttitele.jpeg"  width="400px">
+  <!-- HERO -->
+  <section class="hero" id="about">
+    <div class="hero-bg">
+      <div class="grid-lines"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="hero-pre"><span class="terminal-prompt">~/himanshu</span> <span class="blink">▮</span></p>
+        <h1 class="hero-name">Himanshu<br><span class="name-outline">Mishra</span></h1>
+        <div class="hero-tags">
+          <span class="tag">CSE</span>
+          <span class="tag">Web Dev</span>
+          <span class="tag">DevOps & Cloud</span>
+          <span class="tag">SAP</span>
+        </div>
+        <p class="hero-bio">First-year computer science student at Ramdeobaba University building full-stack projects and exploring system-level programming. Passionate about Java, Python, and web technologies. Currently diving into SAP ERP systems.</p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn-primary">View Projects</a>
+          <a href="#contact" class="btn-ghost">Get In Touch</a>
+        </div>
       </div>
-    <br>
-    <br>
-    <ul>
-      <div class="box41">
-         <li> <h3> PERSONAL FINANCE MANAGER </h3> 
-    <p> Graphic based application to manage income,expenses,and monthly budgets with file storage support <ul> <li>TECH:C,file handling</li> <li>GitHub:github.com/himanshu/finance-manager(vibe coded)</li> </ul> </p> </li>
-    
-    
-    <a class="buttons" href="https://himanshu-12345678388.github.io/finance-project/" rel="noreferrer">finance-manager</a>
+      <div class="hero-img-wrap">
+        <div class="img-frame">
+          <img src="me.png" alt="Himanshu Mishra" class="hero-img">
+          <div class="img-border"></div>
+        </div>
+        <div class="status-badge"><span class="dot"></span> Open to opportunities</div>
+      </div>
     </div>
+    <div class="scroll-hint">scroll <span>↓</span></div>
+  </section>
 
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <div class="container">
+      <h2 class="section-title"><span class="accent">01.</span> Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-icon">{ }</div>
+          <h3>Languages</h3>
+          <div class="skill-pills">
+            <span>C</span><span>Python</span><span>Java</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">&lt;/&gt;</div>
+          <h3>Web</h3>
+          <div class="skill-pills">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">⌘</div>
+          <h3>Tools</h3>
+          <div class="skill-pills">
+            <span>Git</span><span>GitHub</span><span>Shell Scripting</span><span>Vim</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">◈</div>
+          <h3>Concepts</h3>
+          <div class="skill-pills">
+            <span>DSA</span><span>OOP</span><span>AWS Cloud</span><span>SAP ERP</span>
+          </div>
+        </div>
+      </div>
 
-    <div class="box42">
-      <li> <h3>AL TERMINAL ASSISTANT </h3> 
-    <p> A smart terminal tool that understands user commands and automate common linux tasks. <ul> <li>TECH:Python,shell script</li> <li>GitHub:github.com/himanshu/ai-terminal</li> </ul> 
-    </p> </li>
-    
-
-    <a class="buttons" href="https://github.com/himanshu-12345678388/AI-terminal-assistant-.git" rel="noreferrer" >AI-Terminal-assistant</a>
+      <h3 class="sub-title">Certifications</h3>
+      <div class="certs-row">
+        <div class="cert-card">
+          <div class="cert-logo google">G</div>
+          <div class="cert-info">
+            <p class="cert-name">Crash Course on Python</p>
+            <p class="cert-issuer">Google · Coursera · Feb 2026</p>
+          </div>
+          <a href="https://coursera.org/verify/PK9YU8O0MYKT" target="_blank" class="cert-link">↗</a>
+        </div>
+        <div class="cert-card">
+          <div class="cert-logo vim">V</div>
+          <div class="cert-info">
+            <p class="cert-name">Practical Vim Editor Commands on Linux</p>
+            <p class="cert-issuer">Coursera · Feb 2026</p>
+          </div>
+          <a href="https://coursera.org/verify/XXFDEUF8P9XY" target="_blank" class="cert-link">↗</a>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <div class="box43">
-      <li> <h3> PORTFOLIO WEBSITE <h3> 
-    <p>Responsive personal website to showcase skills and projects.</li>
-      <p>TECH :HTML , CSS , JavaScript</p> 
-            
-    <a class="buttons"href="https://himanshu-12345678388.github.io/PORTFOLIO/" rel="noreferrer">PORTFOLIO WEBSITE</a>
-   </div>
+  <!-- PROJECTS -->
+  <section class="section dark-section" id="projects">
+    <div class="container">
+      <h2 class="section-title"><span class="accent">02.</span> Projects</h2>
+      <div class="projects-grid">
 
-   <div class="box44">
-    <li> <h3>ROCK-PAPER-SCISSOR GAME</h3>
-    <P>A basic game which i used to learn DOM manipulation </P>
+        <div class="project-card">
+          <div class="project-num">01</div>
+          <h3>Personal Finance Manager</h3>
+          <p>Graphic-based application to manage income, expenses, and monthly budgets with file storage support.</p>
+          <div class="project-tech"><span>C</span><span>File Handling</span></div>
+          <div class="project-links">
+            <a href="https://himanshu-12345678388.github.io/finance-project/" target="_blank" rel="noreferrer" class="proj-btn">Live ↗</a>
+            <a href="https://github.com/himanshu-12345678388" target="_blank" rel="noreferrer" class="proj-btn ghost">GitHub</a>
+          </div>
+        </div>
 
-    <a class="buttons" href="https://himanshu-12345678388.github.io/rock-paper-scissor/" rel="noreferrer">ROCK-PAPER-SCISSOR</a>
-    </li>
-   </ul>
-   </div>
-</div>
+        <div class="project-card featured">
+          <div class="project-num">02</div>
+          <div class="featured-badge">Featured</div>
+          <h3>AI Terminal Assistant</h3>
+          <p>A smart terminal tool that understands user commands and automates common Linux tasks using natural language.</p>
+          <div class="project-tech"><span>Python</span><span>Shell Script</span></div>
+          <div class="project-links">
+            <a href="https://github.com/himanshu-12345678388/AI-terminal-assistant-.git" target="_blank" rel="noreferrer" class="proj-btn">GitHub ↗</a>
+          </div>
+        </div>
 
-   <div class="box5">
-      <div class="box51">
-    <h2><section class="head2">Positions & Activities</section></h2>
-   <b>Sports club-Ramdeobaba university.</b>
-   <br>
-   <br>
-   <b>Member</b>
-   <p><b>Engaged in organizing and participating in various sports events ,strengthening teamwork
-      and event coordination abilities.</b>
-   </p>
-   <a href="https://www.instagram.com/rbu__sports?igsh=djg3a3c4cjUwaDdx">Sports club</a>
+        <div class="project-card">
+          <div class="project-num">03</div>
+          <h3>Portfolio Website</h3>
+          <p>Responsive personal website to showcase skills, projects, and achievements.</p>
+          <div class="project-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          <div class="project-links">
+            <a href="https://himanshu-12345678388.github.io/PORTFOLIO/" target="_blank" rel="noreferrer" class="proj-btn">Live ↗</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-num">04</div>
+          <h3>Rock-Paper-Scissors Game</h3>
+          <p>A browser-based game built to practice and master DOM manipulation concepts.</p>
+          <div class="project-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          <div class="project-links">
+            <a href="https://himanshu-12345678388.github.io/rock-paper-scissor/" target="_blank" rel="noreferrer" class="proj-btn">Live ↗</a>
+          </div>
+        </div>
+
+      </div>
     </div>
+  </section>
 
-    <hr>
-   
+  <!-- ACHIEVEMENTS -->
+  <section class="section" id="achievements">
+    <div class="container">
+      <h2 class="section-title"><span class="accent">03.</span> Achievements</h2>
+      <div class="achievements-grid">
 
-<div class="box52">
-   <h2><section class="head3">Interests</section></h2>
-   <p><ul><b>
-      <li>Reading non-fiction</li>
-      <li>Orating & public speaking</li>
-      <li>Technology and personal growth</li></b>
-   </ul></p>
-   </div>
-   </div>
-   
-   <div class="box7">
-   <h2 > <section class="head4"> EDUCATION </section> </h2>
-    <pre>     
-   1.secondary high school:carmel academy
-   2.high school:kendriya vidyalaya
-   3.Bachelor of computer science:Ramdeobaba university 
-        </pre>
-</div>
+        <div class="achievement-card">
+          <div class="ach-header">
+            <div class="ach-icon gdg">GDG</div>
+            <div class="ach-meta">
+              <p class="ach-event">TechSprint Hackathon</p>
+              <p class="ach-org">Google Developer Groups · RBU</p>
+            </div>
+            <span class="ach-date">Jan 2026</span>
+          </div>
+          <p class="ach-desc">Participated in the TechSprint Hackathon organized by GDG On Campus RBU, held from 25th December 2025 to 7th January 2026.</p>
+          <img src="himanshuGDG.jpeg" alt="GDG TechSprint Hackathon" class="ach-img">
+        </div>
 
-<div class="box8">
-   <h2 class="learn head5">LEARNING TOOLS</h2>
-    <a class="learn" href="https://www.theodinproject.com/dashboard">THE ODIN PROJECT</a>   
-        
-       <h2 class="contact head6"> <section> CONTACT SECTION </section> </h2>
-       <a href="mishrahimanshu7372@gmail.com">gmail</a> <br>
-        <a href="https://www.instagram.com/whymanshu_/">instagram</a>  <br>
-     <a href="https://www.linkedin.com/in/himanshu-mishra-389085373">linkdin</a>  
-     </div>
+        <div class="achievement-card">
+          <div class="ach-header">
+            <div class="ach-icon sih">SIH</div>
+            <div class="ach-meta">
+              <p class="ach-event">Smart India Hackathon</p>
+              <p class="ach-org">Internal Round · RBU</p>
+            </div>
+            <span class="ach-date">2025</span>
+          </div>
+          <p class="ach-desc">Participated in the SIH internal hackathon at Ramdeobaba University, competing alongside fellow students on real-world problem statements.</p>
+          <img src="sih2025.jpeg" alt="Smart India Hackathon" class="ach-img">
+        </div>
 
-     <br>
-     <br>
-   
-   
-     <label class="settings">
-     <select class="mode" name="mode">
-      <option class="light" value="light">light</option>
-      <option class="dark"  value="Dark">Dark</option>
-     </select>
-     </label>
-   </div>
+      </div>
+    </div>
+  </section>
 
-   <script src="script.js"></script>
-   </body> </html>
+  <!-- EDUCATION & ACTIVITIES -->
+  <section class="section dark-section" id="education">
+    <div class="container two-col">
+
+      <div>
+        <h2 class="section-title"><span class="accent">04.</span> Education</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="tl-dot"></div>
+            <div class="tl-body">
+              <p class="tl-title">B.E. Computer Science</p>
+              <p class="tl-place">Ramdeobaba University</p>
+              <span class="tl-year">2024 – Present</span>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="tl-dot"></div>
+            <div class="tl-body">
+              <p class="tl-title">High School</p>
+              <p class="tl-place">Kendriya Vidyalaya</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="tl-dot"></div>
+            <div class="tl-body">
+              <p class="tl-title">Secondary School</p>
+              <p class="tl-place">Carmel Academy</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h2 class="section-title"><span class="accent">05.</span> Activities</h2>
+        <div class="activity-card">
+          <div class="act-header">
+            <p class="act-role">Member</p>
+            <p class="act-org">Sports Club · Ramdeobaba University</p>
+          </div>
+          <p class="act-desc">Engaged in organizing and participating in various sports events, strengthening teamwork and event coordination abilities.</p>
+          <a href="https://www.instagram.com/rbu__sports?igsh=djg3a3c4cjUwaDdx" target="_blank" class="cert-link" style="font-size:13px">View Club ↗</a>
+        </div>
+
+        <div class="interests-block">
+          <h3 style="font-family:'Syne',sans-serif;font-size:15px;margin-bottom:12px;color:var(--text-muted);">Interests</h3>
+          <div class="interest-list">
+            <span>📖 Reading non-fiction</span>
+            <span>🎤 Orating & public speaking</span>
+            <span>💡 Technology & personal growth</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="container center-content">
+      <h2 class="section-title centered"><span class="accent">06.</span> Get In Touch</h2>
+      <p class="contact-sub">Currently open to new opportunities, collaborations, and interesting conversations.</p>
+      <a href="mailto:mishrahimanshu7372@gmail.com" class="btn-primary large">Say Hello ↗</a>
+      <div class="social-links">
+        <a href="mailto:mishrahimanshu7372@gmail.com" target="_blank">Gmail</a>
+        <a href="https://www.linkedin.com/in/himanshu-mishra-389085373" target="_blank">LinkedIn</a>
+        <a href="https://www.instagram.com/whymanshu_/" target="_blank">Instagram</a>
+        <a href="https://github.com/himanshu-12345678388" target="_blank">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Designed & built by <span class="accent">Himanshu Mishra</span> · 2026</p>
+  </footer>
+
+  <button class="scroll-top" id="scrollTop" aria-label="scroll to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
