@@ -27,10 +27,24 @@ const revealObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.1 });
 
 document.querySelectorAll(
-  '.skill-card, .project-card, .achievement-card, .cert-card, .timeline-item, .activity-card'
+  '.skill-focus, .skill-card, .project-card, .achievement-card, .cert-card, .credential-card, .timeline-item, .activity-card'
 ).forEach(el => {
   el.classList.add('reveal');
   revealObserver.observe(el);
+});
+
+// ==================== SUBTLE CARD TILT ====================
+document.querySelectorAll('.skill-card, .project-card, .credential-card').forEach(card => {
+  card.addEventListener('mousemove', (event) => {
+    const rect = card.getBoundingClientRect();
+    const x = ((event.clientX - rect.left) / rect.width - 0.5) * 4;
+    const y = ((event.clientY - rect.top) / rect.height - 0.5) * -4;
+    card.style.transform = `translateY(-4px) rotateX(${y}deg) rotateY(${x}deg)`;
+  });
+
+  card.addEventListener('mouseleave', () => {
+    card.style.transform = '';
+  });
 });
 
 // ==================== SCROLL TO TOP ====================
