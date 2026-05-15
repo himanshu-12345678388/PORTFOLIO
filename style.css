@@ -535,14 +535,8 @@ ul { list-style: none; }
   gap: 20px;
 }
 .gcloud-grid {
-  grid-template-columns: repeat(6, 1fr);
-}
-.gcloud-grid .credential-card {
-  grid-column: span 2;
-}
-.gcloud-grid .credential-card:nth-child(1),
-.gcloud-grid .credential-card:nth-child(2) {
-  grid-column: span 3;
+  grid-template-columns: minmax(0, 640px);
+  justify-content: center;
 }
 .sap-grid {
   align-items: stretch;
@@ -635,7 +629,9 @@ ul { list-style: none; }
   color: var(--accent);
 }
 .pdf-grid {
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  max-width: 860px;
+  margin: 0 auto;
 }
 .pdf-card {
   flex-direction: row;
@@ -1000,9 +996,6 @@ ul { list-style: none; }
   .achievements-grid { grid-template-columns: 1fr; }
   .credential-grid { grid-template-columns: 1fr; }
   .gcloud-grid { grid-template-columns: 1fr; }
-  .gcloud-grid .credential-card,
-  .gcloud-grid .credential-card:nth-child(1),
-  .gcloud-grid .credential-card:nth-child(2) { grid-column: auto; }
   .pdf-grid { grid-template-columns: 1fr; }
   .two-col { grid-template-columns: 1fr; gap: 48px; }
 }

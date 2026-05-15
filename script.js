@@ -1,4 +1,4 @@
-// ==================== NAV SCROLL EFFECT ====================
+// NAV SCROLL EFFECT 
 const nav = document.getElementById('nav');
 window.addEventListener('scroll', () => {
   nav.style.background = window.scrollY > 40
@@ -6,7 +6,7 @@ window.addEventListener('scroll', () => {
     : 'rgba(10,10,12,0.85)';
 });
 
-// ==================== HAMBURGER ====================
+// HAMBURGER 
 const hamburger = document.getElementById('hamburger');
 const navLinks = document.querySelector('.nav-links');
 hamburger.addEventListener('click', () => {
@@ -16,7 +16,7 @@ document.querySelectorAll('.nav-links a').forEach(a => {
   a.addEventListener('click', () => navLinks.classList.remove('open'));
 });
 
-// ==================== SCROLL REVEAL ====================
+//  SCROLL REVEAL 
 const revealObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry, i) => {
     if (entry.isIntersecting) {
@@ -33,7 +33,7 @@ document.querySelectorAll(
   revealObserver.observe(el);
 });
 
-// ==================== SUBTLE CARD TILT ====================
+//  SUBTLE CARD TILT 
 document.querySelectorAll('.skill-card, .project-card, .credential-card').forEach(card => {
   card.addEventListener('mousemove', (event) => {
     const rect = card.getBoundingClientRect();
@@ -47,7 +47,7 @@ document.querySelectorAll('.skill-card, .project-card, .credential-card').forEac
   });
 });
 
-// ==================== SCROLL TO TOP ====================
+//  SCROLL TO TOP 
 const scrollTopBtn = document.getElementById('scrollTop');
 window.addEventListener('scroll', () => {
   scrollTopBtn.classList.toggle('visible', window.scrollY > 400);
@@ -56,7 +56,7 @@ scrollTopBtn.addEventListener('click', () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
-// ==================== SMOOTH ACTIVE NAV ====================
+//  SMOOTH ACTIVE NAV 
 const sections = document.querySelectorAll('section[id]');
 const navAnchors = document.querySelectorAll('.nav-links a');
 const activeSpy = new IntersectionObserver((entries) => {
@@ -70,11 +70,11 @@ const activeSpy = new IntersectionObserver((entries) => {
 }, { threshold: 0.4 });
 sections.forEach(s => activeSpy.observe(s));
 
-// ==================== PAGE LOAD FADE ====================
+//  PAGE LOAD FADE 
 document.body.style.opacity = '0';
 document.body.style.transition = 'opacity 0.5s ease';
 window.addEventListener('load', () => { document.body.style.opacity = '1'; });
 
-// ==================== CONSOLE EASTER EGG ====================
+//  CONSOLE EASTER EGG 
 console.log('%c👨‍💻 Himanshu Mishra — Portfolio', 'color:#e8ff47;font-size:16px;font-weight:bold;');
 console.log('%cBuilt with HTML, CSS & vanilla JS', 'color:#8888a0;font-size:12px;');
