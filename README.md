@@ -46,28 +46,6 @@ The site uses a dark terminal-inspired design and is built with plain **HTML**, 
 - **Education & Activities** — academic background and involvement
 - **Contact** — email and social links
 
-## Running the Project Locally
-
-Because this is a static website, no build step is required.
-
-1. Clone or download the repository.
-2. Open `index.html` directly in a browser.
-
-For a simple local server, you can also run:
-
-```bash
-python3 -m http.server 8000
-```
-
-Then open `http://localhost:8000` in your browser.
-
-## Deployment
-
-This project can be deployed easily with any static hosting platform, such as:
-
-- GitHub Pages
-- Netlify
-- Vercel
 
 ## Author
 
