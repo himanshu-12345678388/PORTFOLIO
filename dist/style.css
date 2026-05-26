@@ -1282,39 +1282,11 @@ button { font: inherit; }
 
   .hero {
     min-height: auto;
-    justify-items: center;
     padding-bottom: 96px;
-    text-align: center;
-  }
-
-  .hero-content {
-    width: min(100%, 560px);
-    padding-top: 0;
-  }
-
-  .hero-content .eyebrow {
-    justify-content: center;
   }
 
   .hero h1 {
     font-size: clamp(46px, 15vw, 76px);
-  }
-
-  .hero-tagline {
-    margin-inline: auto;
-  }
-
-  .hero-tags {
-    justify-content: center;
-  }
-
-  .hero-actions {
-    justify-content: center;
-  }
-
-  .hero-panel {
-    justify-self: center;
-    width: min(100%, 560px);
   }
 
   .section-intro h2 {
@@ -1371,46 +1343,12 @@ button { font: inherit; }
   .nav { padding: 0 14px; }
   .hero {
     gap: 26px;
-    padding: 96px 18px 82px;
+    padding: 96px 14px 82px;
   }
-
-  .hero h1 {
-    max-width: 10ch;
-    margin-inline: auto;
-  }
-
-  .hero-tagline {
-    max-width: 31ch;
-    font-size: 19px;
-    line-height: 1.32;
-  }
-
-  .hero-tags {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    width: min(100%, 330px);
-    margin-inline: auto;
-  }
-
-  .hero-tags span {
-    justify-content: center;
-    min-width: 0;
-    padding-inline: 8px;
-  }
-
   .hero-panel {
-    width: min(100%, 330px);
     gap: 14px;
     padding: 18px;
   }
-
-  .hero-actions {
-    display: grid;
-    grid-template-columns: 1fr;
-    width: min(100%, 330px);
-    margin-inline: auto;
-  }
-
   .panel-label {
     font-size: 9px;
     letter-spacing: 0.1em;
