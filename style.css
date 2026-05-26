@@ -185,6 +185,7 @@ button { font: inherit; }
 }
 
 .hero-content {
+  min-width: 0;
   max-width: 760px;
   padding-top: 20px;
 }
@@ -304,6 +305,7 @@ button { font: inherit; }
 .hero-panel {
   position: relative;
   align-self: center;
+  min-width: 0;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas:
@@ -1209,7 +1211,7 @@ button { font: inherit; }
   .about-grid,
   .skills-layout,
   .journey-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .hero {
@@ -1242,6 +1244,10 @@ button { font: inherit; }
 }
 
 @media (max-width: 760px) {
+  .nav {
+    height: 60px;
+  }
+
   .nav-links {
     position: fixed;
     top: 60px;
@@ -1297,10 +1303,13 @@ button { font: inherit; }
   }
 
   .hero h1 {
-    font-size: clamp(46px, 15vw, 76px);
+    max-width: 100%;
+    font-size: clamp(38px, 9.5vw, 58px);
+    text-wrap: balance;
   }
 
   .hero-tagline {
+    width: 100%;
     margin-inline: auto;
   }
 
@@ -1375,8 +1384,9 @@ button { font: inherit; }
   }
 
   .hero h1 {
-    max-width: 10ch;
+    max-width: 100%;
     margin-inline: auto;
+    font-size: clamp(34px, 9vw, 42px);
   }
 
   .hero-tagline {
@@ -1407,7 +1417,7 @@ button { font: inherit; }
   .hero-actions {
     display: grid;
     grid-template-columns: 1fr;
-    width: min(100%, 330px);
+    width: min(calc(100vw - 36px), 330px);
     margin-inline: auto;
   }
 
