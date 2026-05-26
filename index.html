@@ -3,400 +3,353 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Himanshu Mishra — Portfolio</title>
+  <title>Himanshu Mishra - Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&amp;family=Syne:wght@400;600;700;800&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&amp;family=Syne:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <!-- NAV -->
   <nav class="nav" id="nav">
-    <div class="nav-logo"><span class="accent">&gt;</span> HM</div>
-    <ul class="nav-links">
-      <li><a href="#about">about</a></li>
-      <li><a href="#skills">skills</a></li>
-      <li><a href="#projects">projects</a></li>
-      <li><a href="#achievements">participation</a></li>
-      <li><a href="#sap">sap</a></li>
-      <li><a href="#certificates">certificates</a></li>
-      <li><a href="#contact">contact</a></li>
+    <a href="#home" class="nav-logo" aria-label="Himanshu Mishra home">
+      <span>HM</span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">~/home</a></li>
+      <li><a href="#about">whoami</a></li>
+      <li><a href="#skills">cat skills</a></li>
+      <li><a href="#projects">ls projects</a></li>
+      <li><a href="#sap">certs --sap</a></li>
+      <li><a href="#journey">git log</a></li>
+      <li><a href="#contact">ssh contact</a></li>
     </ul>
-    <button class="hamburger" id="hamburger" aria-label="menu">
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
   </nav>
 
-  <!-- HERO -->
-  <section class="hero" id="about">
-    <div class="hero-bg">
-      <div class="grid-lines"></div>
-    </div>
-    <div class="hero-content">
-      <div class="hero-text">
-        <p class="hero-pre"><span class="terminal-prompt">~/himanshu</span> <span class="blink">▮</span></p>
-        <h1 class="hero-name">Himanshu<br><span class="name-outline">Mishra</span></h1>
-        <div class="hero-tags">
-          <span class="tag">CSE</span>
-          <span class="tag">Web Dev</span>
-          <span class="tag">Linux &amp; Cloud</span>
-          <span class="tag">SAP E2E Consultant</span>
-          <span class="tag">SAP ABAP Developer</span>
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-content reveal-on-load">
+        <p class="eyebrow">~/himanshu $ whoami</p>
+        <h1>Himanshu Mishra</h1>
+        <p class="hero-tagline"> SAP E2E CONSULATANT, ASPIRING ABAP AND JAVA BACKEND DEVELOPER .</p>
+        <div class="hero-tags" aria-label="Core focus areas">
+          <span>CSE</span>
+          <span>Web Dev</span>
+          <span>Linux &amp; Cloud</span>
+          <span>SAP E2E</span>
+          <span>ABAP</span>
         </div>
-        <p class="hero-bio">A computer science and SAP student at Ramdeobaba University building full-stack projects and exploring system design. Passionate about Java, ABAP, and web technologies. Currently diving into SAP ERP systems.</p>
-        <div class="hero-cta">
-          <a href="#projects" class="btn-primary">View Projects</a>
-          <a href="#contact" class="btn-ghost">Get In Touch</a>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="mailto:mishrahimanshu7372@gmail.com" class="btn btn-ghost">Get In Touch</a>
         </div>
       </div>
-      <div class="hero-img-wrap">
-        <div class="img-frame">
-          <img src="mee.jpeg" alt="Himanshu Mishra" class="hero-img">
-          <div class="img-border"></div>
+      <aside class="hero-panel reveal-on-load" aria-label="Profile status">
+        <div class="hero-panel-copy">
+          <p class="panel-label">$ now --learning</p>
+          <h2>SAP ERP systems, Backend, and System Design .</h2>
         </div>
-        <div class="status-badge"><span class="dot"></span> Open to opportunities</div>
-      </div>
-    </div>
-    <div class="scroll-hint">scroll <span>↓</span></div>
-  </section>
-
-  <!-- SKILLS -->
-  <section class="section" id="skills">
-    <div class="container">
-      <div class="section-heading">
-        <h2 class="section-title"><span class="accent">01.</span> Skills</h2>
-        <p class="section-note">A practical stack across programming, cloud fundamentals, SAP, and everyday developer tooling.</p>
-      </div>
-      <div class="skills-panel">
-        <div class="skill-focus">
-          <p class="focus-label">Current focus</p>
-          <h3>SAP ERP, cloud labs, and clean web interfaces</h3>
-          <p>Building breadth through projects while going deeper into ABAP, SAP business processes, Linux, and Google Cloud skill badges.</p>
+        <div class="hero-mini-stack" aria-label="Current focus">
+          <span>ABAP</span>
+          <span>Java</span>
+          <span>Cloud</span>
         </div>
+        <span class="status-pill"><span></span> Open to opportunities</span>
+      </aside>
+      <a href="#about" class="scroll-cue" aria-label="Scroll to about section">Scroll</a>
+    </section>
 
-        <div class="skills-grid">
-          <div class="skill-card">
-            <div class="skill-top">
-              <div class="skill-icon">{ }</div>
-              <span class="skill-count">04</span>
-            </div>
-            <h3>Languages</h3>
-            <div class="skill-pills">
-              <span>C</span><span>Python</span><span>Java</span><span>ABAP</span>
-            </div>
+    <section class="section paper-section" id="about">
+      <div class="container about-grid">
+        <div class="section-intro">
+          <p class="eyebrow">$ whoami</p>
+          <h2>A combination of a techinal and functional Consultant.</h2>
+        </div>
+        <div class="about-card reveal">
+          <p>A computer science and SAP student at Ramdeobaba University building full-stack projects and exploring system design. Passionate about Java, ABAP, and web technologies. Currently diving into SAP ERP systems.</p>
+          <div class="about-stats">
+            <div><strong>05</strong><span>Projects</span></div>
+            <div><strong>04</strong><span>Languages</span></div>
+            <div><strong>SAP</strong><span>E2E Focus</span></div>
           </div>
+        </div>
+        <blockquote class="about-quote reveal">
+          <span>$ philosophy</span>
+          <h4>if it can be automated, it should be automated.</h4>
+        </blockquote>
+      </div>
+    </section>
 
-          <div class="skill-card">
-            <div class="skill-top">
-              <div class="skill-icon">&lt;/&gt;</div>
-              <span class="skill-count">03</span>
-            </div>
-            <h3>Web</h3>
-            <div class="skill-pills">
-              <span>HTML</span><span>CSS</span><span>JavaScript</span>
-            </div>
+    <section class="section textured-section" id="skills">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">$ cat skills.json</p>
+            <h2>Tech stack.</h2>
           </div>
-
-          <div class="skill-card">
-            <div class="skill-top">
-              <div class="skill-icon">⌘</div>
-              <span class="skill-count">06</span>
-            </div>
-            <h3>Tools</h3>
-            <div class="skill-pills">
-              <span>Git</span><span>GitHub</span><span>Shell</span><span>Vim</span><span>Figma</span><span>Eclipse ABAP</span>
-            </div>
-          </div>
-
-          <div class="skill-card">
-            <div class="skill-top">
-              <div class="skill-icon">◈</div>
-              <span class="skill-count">03</span>
-            </div>
-            <h3>Concepts</h3>
-            <div class="skill-pills">
-              <span>DSA</span><span>OOP</span><span>SAP ERP E2E</span>
-            </div>
-          </div>
-
-          <div class="skill-card skill-wide">
-            <div class="skill-top">
-              <div class="skill-icon">*</div>
-              <span class="skill-count">03</span>
-            </div>
-            <h3>Platforms</h3>
-            <div class="skill-pills">
-              <span>Google Cloud</span><span>SAP Fiori Cloud Edition</span><span>SAP GUI</span>
-            </div>
+          <p>Comfortable moving between code, tooling, cloud fundamentals, and SAP business-process thinking.</p>
+        </div>
+        <div class="skills-layout">
+          <article class="skill-focus reveal">
+            <span class="focus-label">Current focus</span>
+            <h3>SAP ERP, cloud labs, and clean web interfaces</h3>
+            <p>Going deeper into ABAP, SAP business processes, Linux, and Google Cloud skill badges while shipping portfolio projects.</p>
+          </article>
+          <div class="skills-grid">
+            <article class="skill-card reveal">
+              <span class="skill-icon">{ }</span>
+              <h3>Languages</h3>
+              <div class="pill-list"><span>C</span><span>Python</span><span>Java</span><span>ABAP</span></div>
+            </article>
+            <article class="skill-card reveal">
+              <span class="skill-icon">&lt;/&gt;</span>
+              <h3>Web</h3>
+              <div class="pill-list"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            </article>
+            <article class="skill-card reveal">
+              <span class="skill-icon">#</span>
+              <h3>Tools</h3>
+              <div class="pill-list"><span>Git</span><span>GitHub</span><span>Shell</span><span>Vim</span><span>Figma</span><span>Eclipse ABAP</span></div>
+            </article>
+            <article class="skill-card reveal">
+              <span class="skill-icon">*</span>
+              <h3>Platforms</h3>
+              <div class="pill-list"><span>Google Cloud</span><span>SAP Fiori Cloud Edition</span><span>SAP GUI</span></div>
+            </article>
+            <article class="skill-card wide reveal">
+              <span class="skill-icon">01</span>
+              <h3>Concepts</h3>
+              <div class="pill-list"><span>DSA</span><span>OOP</span><span>SAP ERP E2E</span></div>
+            </article>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- PROJECTS -->
-  <section class="section dark-section" id="projects">
-    <div class="container">
-      <h2 class="section-title"><span class="accent">02.</span> Projects</h2>
-      <div class="projects-grid">
-
-        
-
-        <div class="project-card featured">
-          <div class="project-num">01</div>
-          <div class="featured-badge">Featured</div>
-          <h3>E-SHELL</h3>
-          <p>A smart terminal tool that understands user commands and automates common Linux tasks using natural language.</p>
-          <div class="project-tech"><span>Python</span><span>Shell Script</span></div>
-          <div class="project-links">
-            <a href="https://github.com/himanshu-12345678388/AI-terminal-assistant-.git" target="_blank" rel="noreferrer" class="proj-btn">GitHub ↗</a>
+    <section class="section project-section" id="projects">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">$ ls ./projects</p>
+            <h2>Interactive builds with a practical learning trail.</h2>
           </div>
+          <p>Click any card to expand details. Featured work is highlighted in red.</p>
         </div>
-
-        <div class="project-card">
-          <div class="project-num">02</div>
-          <h3>Portfolio Website</h3>
-          <p>Responsive personal website to showcase skills, projects, and achievements.</p>
-          <div class="project-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
-          <div class="project-links">
-            <a href="https://himanshu-12345678388.github.io/PORTFOLIO/" target="_blank" rel="noreferrer" class="proj-btn">Live ↗</a>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-num">03</div>
-          <h3>Rock-Paper-Scissors Game</h3>
-          <p>A browser-based game built to practice and master DOM manipulation concepts.</p>
-          <div class="project-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
-          <div class="project-links">
-            <a href="https://himanshu-12345678388.github.io/rock-paper-scissor/" target="_blank" rel="noreferrer" class="proj-btn">Live ↗</a>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-num">04</div>
-          <h3>SAP E2E PROCESSES</h3>
-          <p>A complete process flow for End To End process</p>
-          <div class="project-tech"><span>P2P</span><span>O2C</span><span>L2C</span><span>FI</span></div>
-          <div class="project-links">
-            <a href="https://github.com/himanshu-12345678388/SAP-FI-End-to-End-Business-Process-Simulation-S-4HANA-fiori.git" class="proj-btn">GitHub ↗</a>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-num">05</div>
-          <h3>Task-Tracker</h3>
-          <p>A Backend project that helps users to track their tasks using a json file to store them .</p>
-          <div class="project-tech"><span>JAVA</span></div>
-          <div class="project-link">
-            <a href=" " class="proj-btn">GitHub </a>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- PARTICIPATION -->
-  <section class="section" id="achievements">
-    <div class="container">
-      <h2 class="section-title"><span class="accent">03.</span> Participation</h2>
-      <div class="achievements-grid">
-
-        <div class="achievement-card">
-          <div class="ach-header">
-            <div class="ach-icon gdg">GDG</div>
-            <div class="ach-meta">
-              <p class="ach-event">TechSprint Hackathon</p>
-              <p class="ach-org">Google Developer Groups · RBU</p>
+        <div class="projects-grid">
+          <article class="project-card featured reveal" tabindex="0">
+            <div class="project-top"><span>01</span><strong>Featured</strong></div>
+            <h3>E-SHELL</h3>
+            <p>A smart terminal tool that understands user commands and automates common Linux tasks using natural language.</p>
+            <div class="pill-list"><span>Python</span><span>Shell Script</span></div>
+            <div class="project-more">
+              <p>Designed around everyday command-line friction: interpreting intent, suggesting actions, and helping automate repetitive Linux workflows.</p>
+              <a href="https://github.com/himanshu-12345678388/AI-terminal-assistant-.git" target="_blank" rel="noreferrer">GitHub</a>
             </div>
-            <span class="ach-date">Jan 2026</span>
-          </div>
-          <p class="ach-desc">TechSprint Hackathon--GDG RBU, 7th January 2026.</p>
-        </div>
+            <button class="project-toggle" type="button">Details</button>
+          </article>
 
-        <div class="achievement-card">
-          <div class="ach-header">
-            <div class="ach-icon sih">SIH</div>
-            <div class="ach-meta">
-              <p class="ach-event">Smart India Hackathon</p>
-              <p class="ach-org">Internal Round · RBU</p>
+          <article class="project-card reveal" tabindex="0">
+            <div class="project-top"><span>02</span></div>
+            <h3>Portfolio Website</h3>
+            <p>Responsive personal website to showcase skills, projects, and achievements.</p>
+            <div class="pill-list"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <div class="project-more">
+              <p>Structured as a fast static portfolio with smooth navigation, responsive sections, and content-focused project cards.</p>
+              <a href="https://himanshu-12345678388.github.io/PORTFOLIO/" target="_blank" rel="noreferrer">Live</a>
             </div>
-            <span class="ach-date">2025</span>
-          </div>
-          <p class="ach-desc">SIH internal hackathon at Ramdeobaba University 2025</p>
+            <button class="project-toggle" type="button">Details</button>
+          </article>
+
+          <article class="project-card reveal" tabindex="0">
+            <div class="project-top"><span>03</span></div>
+            <h3>Rock-Paper-Scissors Game</h3>
+            <p>A browser-based game built to practice and master DOM manipulation concepts.</p>
+            <div class="pill-list"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <div class="project-more">
+              <p>Small game loop focused on event handling, dynamic score updates, and clean user feedback in vanilla JavaScript.</p>
+              <a href="https://himanshu-12345678388.github.io/rock-paper-scissor/" target="_blank" rel="noreferrer">Live</a>
+            </div>
+            <button class="project-toggle" type="button">Details</button>
+          </article>
+
+          <article class="project-card reveal" tabindex="0">
+            <div class="project-top"><span>04</span></div>
+            <h3>SAP E2E Processes</h3>
+            <p>A complete process flow for end-to-end SAP business processes.</p>
+            <div class="pill-list"><span>P2P</span><span>O2C</span><span>L2C</span><span>FI</span></div>
+            <div class="project-more">
+              <p>Documents and simulates SAP S/4HANA process thinking across procurement, sales, lead-to-cash, and finance flows.</p>
+              <a href="https://github.com/himanshu-12345678388/SAP-FI-End-to-End-Business-Process-Simulation-S-4HANA-fiori.git" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+            <button class="project-toggle" type="button">Details</button>
+          </article>
+
+          <article class="project-card reveal" tabindex="0">
+            <div class="project-top"><span>05</span></div>
+            <h3>Task-Tracker</h3>
+            <p>A backend project that helps users track their tasks using a JSON file for storage.</p>
+            <div class="pill-list"><span>Java</span><span>JSON</span></div>
+            <div class="project-more">
+              <p>Practice project for backend structure, basic persistence, command handling, and clean task state management.</p>
+            </div>
+            <button class="project-toggle" type="button">Details</button>
+          </article>
         </div>
-
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- SAP -->
-  <section class="section dark-section" id="sap">
-    <div class="container">
-      <h2 class="section-title"><span class="accent">04.</span> SAP</h2>
-      <div class="credential-grid sap-grid">
-
-        <a href="SAP/SAP2024Certification20260325-32-7ix1pn (1).pdf" target="_blank" rel="noreferrer" class="credential-card sap-feature">
-          <div class="credential-media badge-media">
+    <section class="section paper-section" id="sap">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">$ certs --sap --cloud</p>
+            <h2>Credentials that connect technical skills with enterprise workflows.</h2>
+          </div>
+        </div>
+        <div class="certifications-layout">
+          <a href="SAP/SAP2024Certification20260325-32-7ix1pn (1).pdf" target="_blank" rel="noreferrer" class="credential-card sap-card reveal">
             <img src="SAP/sap-certified-implementation-consultant-end-to-end-.png" alt="SAP certified implementation consultant badge">
-          </div>
-          <div class="credential-body">
-            <p class="credential-kicker">SAP Certification</p>
-            <h3>SAP Certified - Implementation Consultant</h3>
-            <p>End-to-End Business Processes for SAP Business Suite</p>
-            <span class="credential-link">Open PDF ↗</span>
-          </div>
-        </a>
-
-        <a href="SAP/sap-certified-implementation-consultant-end-to-end-.png" target="_blank" rel="noreferrer" class="credential-card">
-          <div class="credential-media badge-media">
-            <img src="SAP/sap-certified-implementation-consultant-end-to-end-.png" alt="SAP certified badge artwork">
-          </div>
-          <div class="credential-body">
-            <p class="credential-kicker">Badge</p>
-            <h3>SAP Consultant Badge</h3>
-            <p>Credential badge image from the SAP certification folder.</p>
-            <span class="credential-link">Open Image ↗</span>
-          </div>
-        </a>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- CERTIFICATES -->
-  <section class="section" id="certificates">
-    <div class="container">
-      <h2 class="section-title"><span class="accent">05.</span> Certificates</h2>
-
-      <h3 class="sub-title">Google Cloud</h3>
-      <div class="credential-grid gcloud-grid">
-        <a href="certificates/Gcloud2.jpeg" target="_blank" rel="noreferrer" class="credential-card image-cert">
-          <div class="credential-media wide-media">
-            <img src="certificates/Gcloud2.jpeg" alt="Google Cloud Computing Foundations certificate">
-          </div>
-          <div class="credential-body">
-            <p class="credential-kicker">Google Cloud</p>
-            <h3>Google Cloud Computing Foundations</h3>
-            <p>Certificate program for cloud computing, infrastructure, and cloud-native application fundamentals.</p>
-            <span class="credential-link">Open Image ↗</span>
-          </div>
-        </a>
-      </div>
-
-
-      <h3 class="sub-title">AWS</h3>
-      <div class="credential-grid gcloud-grid">
-        <a href="certificates/AWS_ESSENTIALS.pdf" target="_blank" rel="noreferrer" class="credential-card image-cert">
-          <div class="credential-media wide-media">
-            <img src="certificates/AWS_ESSENTIALS_thumbnail.jpg" alt="AWS Cloud Practitioner Essentials certificate">
-          </div>
-          <div class="credential-body">
-            <p class="credential-kicker">AWS</p>
-            <h3>AWS Cloud Practitioner Essentials</h3>
-            <p>Completion certificate · May 16, 2026</p>
-            <span class="credential-link">Open PDF ↗</span>
-          </div>
-        </a>
-      </div>
-
-      <h3 class="sub-title">Coursera</h3>
-      <div class="credential-grid pdf-grid">
-        
-
-        <a href="certificates/python_certificate.pdf" target="_blank" rel="noreferrer" class="credential-card pdf-card">
-          <div class="pdf-icon">PDF</div>
-          <div class="credential-body">
-            <p class="credential-kicker">Google · Coursera</p>
-            <h3>Crash Course on Python</h3>
-            <p>Certificate file: python_certificate.pdf</p>
-            <span class="credential-link">Open PDF ↗</span>
-          </div>
-        </a>
-
-        <a href="certificates/git_and_github.pdf" target="_blank" rel="noreferror" class="credential-card pdf-card">
-          <div class="pdf-icon">PDF</div>
-          <div class="credential-body">
-            <p class="credential-kicker">Google . Coursera</p>
-            <h3>Git and GitHub</h3>
-            <p>Certificate file: git_and_github.pdf</p>
-            <span class="credential-link">Open PDF </span>
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- EDUCATION & ACTIVITIES -->
-  <section class="section dark-section" id="education">
-    <div class="container two-col">
-
-      <div>
-        <h2 class="section-title"><span class="accent">06.</span> Education</h2>
-        <div class="timeline">
-          <div class="timeline-item">
-            <div class="tl-dot"></div>
-            <div class="tl-body">
-              <p class="tl-title">Btech CSE industry integrated course with SAP</p>
-              <p class="tl-place">Ramdeobaba University</p>
-              <span class="tl-year">2025 – Present</span>
+            <div class="credential-body">
+              <p class="eyebrow">SAP Certification</p>
+              <h3>SAP Certified - Implementation Consultant</h3>
+              <p>End-to-End Business Processes for SAP Business Suite</p>
+              <span>Open PDF</span>
             </div>
-          </div>
-          <div class="timeline-item">
-            <div class="tl-dot"></div>
-            <div class="tl-body">
-              <p class="tl-title">High School</p>
-              <p class="tl-place">Kendriya Vidyalaya</p>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="tl-dot"></div>
-            <div class="tl-body">
-              <p class="tl-title">Secondary School</p>
-              <p class="tl-place">Carmel Academy</p>
-            </div>
+          </a>
+
+          <div class="cert-list">
+            <a href="certificates/Gcloud2.jpeg" target="_blank" rel="noreferrer" class="cert-item reveal">
+              <span class="cert-mark">GC</span>
+              <div>
+                <p>Google Cloud</p>
+                <h3>Google Cloud Computing Foundations</h3>
+                <small>Cloud, infrastructure, and cloud-native fundamentals</small>
+              </div>
+              <strong>Open</strong>
+            </a>
+            <a href="certificates/AWS_ESSENTIALS.pdf" target="_blank" rel="noreferrer" class="cert-item reveal">
+              <span class="cert-mark">AWS</span>
+              <div>
+                <p>AWS</p>
+                <h3>AWS Cloud Practitioner Essentials</h3>
+                <small>Completion certificate - May 16, 2026</small>
+              </div>
+              <strong>Open</strong>
+            </a>
+            <a href="certificates/python_certificate.pdf" target="_blank" rel="noreferrer" class="cert-item reveal">
+              <span class="cert-mark">PY</span>
+              <div>
+                <p>Google / Coursera</p>
+                <h3>Crash Course on Python</h3>
+                <small>Programming fundamentals and Python workflows</small>
+              </div>
+              <strong>Open</strong>
+            </a>
+            <a href="certificates/git_and_github.pdf" target="_blank" rel="noreferrer" class="cert-item reveal">
+              <span class="cert-mark">GIT</span>
+              <div>
+                <p>Google / Coursera</p>
+                <h3>Git and GitHub</h3>
+                <small>Version control and collaborative development</small>
+              </div>
+              <strong>Open</strong>
+            </a>
           </div>
         </div>
       </div>
+    </section>
 
-      <div>
-        <h2 class="section-title"><span class="accent">07.</span> Activities</h2>
-        <div class="activity-card">
-          <div class="act-header">
-            <p class="act-role">Member</p>
-            <p class="act-org">Sports Club · Ramdeobaba University</p>
+    <section class="section textured-section" id="journey">
+      <div class="container journey-grid">
+        <div>
+          <p class="eyebrow">$ git log --journey</p>
+          <h2>Journey</h2>
+          <div class="timeline">
+            <article class="timeline-item reveal">
+              <span class="timeline-dot"></span>
+              <div>
+                <h3>BTech CSE industry integrated course with SAP</h3>
+                <p>Ramdeobaba University</p>
+                <time>2025 - Present</time>
+              </div>
+            </article>
+            <article class="timeline-item reveal">
+              <span class="timeline-dot"></span>
+              <div>
+                <h3>High School</h3>
+                <p>Kendriya Vidyalaya</p>
+              </div>
+            </article>
+            <article class="timeline-item reveal">
+              <span class="timeline-dot"></span>
+              <div>
+                <h3>Secondary School</h3>
+                <p>Carmel Academy</p>
+              </div>
+            </article>
           </div>
-          <p class="act-desc">Engaged in organizing and participating in various sports events, strengthening teamwork and event coordination abilities.</p>
-          <a href="https://www.instagram.com/rbu__sports?igsh=djg3a3c4cjUwaDdx" target="_blank" class="cert-link" style="font-size:13px">View Club ↗</a>
+        </div>
+        <div>
+          <p class="eyebrow">$ grep participation</p>
+          <h2>Activities</h2>
+          <div class="activity-stack">
+            <article class="activity-card reveal">
+              <span>Jan 2026</span>
+              <h3>TechSprint Hackathon</h3>
+              <p>Google Developer Groups - RBU. TechSprint Hackathon, 7th January 2026.</p>
+            </article>
+            <article class="activity-card reveal">
+              <span>2025</span>
+              <h3>Smart India Hackathon</h3>
+              <p>SIH internal hackathon at Ramdeobaba University 2025.</p>
+            </article>
+            <article class="activity-card reveal">
+              <span>Member</span>
+              <h3>Sports Club - Ramdeobaba University</h3>
+              <p>Organizing and participating in sports events, strengthening teamwork and event coordination.</p>
+              <a href="https://www.instagram.com/rbu__sports?igsh=djg3a3c4cjUwaDdx" target="_blank" rel="noreferrer">View Club</a>
+            </article>
+          </div>
         </div>
       </div>
+    </section>
 
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section class="section" id="contact">
-    <div class="container center-content">
-      <h2 class="section-title centered"><span class="accent">08.</span> Get In Touch</h2>
-      <p class="contact-sub">Currently open to new opportunities, collaborations, and interesting conversations.</p>
-      <a href="mailto:mishrahimanshu7372@gmail.com" class="btn-primary large">Say Hello ↗</a>
-      <div class="social-links">
-        <a href="mailto:mishrahimanshu7372@gmail.com" target="_blank">Gmail</a>
-        <a href="https://www.linkedin.com/in/himanshu-mishra-389085373" target="_blank">LinkedIn</a>
-        <a href="https://www.instagram.com/whymanshu_/" target="_blank">Instagram</a>
-        <a href="https://github.com/himanshu-12345678388" target="_blank">GitHub</a>
+    <section class="section contact-section" id="contact">
+      <div class="container contact-card reveal">
+        <div class="contact-copy">
+          <p class="eyebrow">$ ssh contact</p>
+          <h2>Let’s build something useful.</h2>
+          <p>Currently open to new opportunities, collaborations, and interesting conversations.</p>
+          <div class="contact-actions">
+            <a href="mailto:mishrahimanshu7372@gmail.com" class="btn btn-primary">Say Hello</a>
+            <a href="https://github.com/himanshu-12345678388" target="_blank" rel="noreferrer" class="btn btn-ghost">GitHub</a>
+          </div>
+          <div class="social-links">
+            <a href="mailto:mishrahimanshu7372@gmail.com">Gmail</a>
+            <a href="https://www.linkedin.com/in/himanshu-mishra-389085373" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="https://www.instagram.com/whymanshu_/" target="_blank" rel="noreferrer">Instagram</a>
+            <a href="https://github.com/himanshu-12345678388" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+        </div>
+        <div class="contact-photo-card" aria-label="Himanshu Mishra">
+          <img src="mee.jpeg" alt="Himanshu Mishra">
+          <div>
+            <span>Thanks for visiting</span>
+            <strong>Himanshu Mishra</strong>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <footer class="footer">
-    <p>Designed &amp; built by <span class="accent">Himanshu Mishra</span> · 2026</p>
+    <p>Designed &amp; built by <span>Himanshu Mishra</span> - 2026</p>
   </footer>
 
-  <button class="scroll-top" id="scrollTop" aria-label="scroll to top">↑</button>
-
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">↑</button>
   <script src="script.js"></script>
 </body>
 </html>
